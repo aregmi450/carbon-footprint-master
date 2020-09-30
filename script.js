@@ -22,7 +22,10 @@ $(document).ready(function() {
 			var electricInput = document.getElementById("electric").value;
 			var gasInput = document.getElementById("gas").value;
 			var carInput = document.getElementById("car").value;
-			var flights4MoreInput = document.getElementById("flights-4-more").value;
+			var oilInput = document.getElementById("two-wheeler").value;
+			var flightsInput = document.getElementById("flights-4-more").value;
+			var flights4MoreInput = flightsInput < 10? flightsInput : 0;
+			var flights4LessInput = flightsInput >=10? flightsInput : 0;
 			
 			// set variables for calculating each component score
 			var electricScore = "";
