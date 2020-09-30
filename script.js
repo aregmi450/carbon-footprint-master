@@ -110,6 +110,11 @@ $(document).ready(function() {
 
 			// refresh page when recalculate button clicked
 			$("#recalculate-btn").on("click", function() {
+				document.getElementById("electric").value = 0;
+				document.getElementById("gas").value = 0;
+				document.getElementById("car").value = 0;
+				document.getElementById("two-wheeler").value = 0;
+				document.getElementById("flights-4-more").value = 0;
 				location.reload();
 				window.scrollTo(0, 0);
 			});
