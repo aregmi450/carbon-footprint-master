@@ -6,7 +6,7 @@
 #announcement-header,
 #announcement-subheader {
   color: white;
-  padding: 5px;
+  padding: 10px;
 }
 
 #announcement-header {
@@ -51,4 +51,44 @@
 .score-info {
   padding: 10px;
   margin: 0;
+}
+
+#about-panel {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: linear-gradient(to right,rgba(38, 77, 0, 0.55), rgba(38, 77, 0, 0.55)),url('background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#about-header {
+  font-size: 4em;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 80px;
+}
+#about-subheader {
+  color: white;
+  padding: none;
+  font-size: 2em;
+}
+#about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: justify;
+  font-size: 1.5em;
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+#quiz {
+  font-size: 3em;
+  color: green;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#takequiz {
+  color: #01295F;
+  padding: none;
+  font-size: 2em;
+  padding-bottom: 50px;
 }
