@@ -53,13 +53,15 @@
   margin: 0;
 }
 
+
+/* about */
+
 #about-panel {
-  padding-top: 80px;
-  padding-bottom: 80px;
   background-image: linear-gradient(to right,rgba(38, 77, 0, 0.55), rgba(38, 77, 0, 0.55)),url('background.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
+  height: 65px;
 }
 #about-header {
   font-size: 4em;
@@ -80,11 +82,79 @@
   height: 100%;
   font-family: "Inconsolata", sans-serif;
 }
-#quiz {
+#fact {
   font-size: 3em;
-  color: green;
+  color: #F4743B;
   padding-top: 5px;
   padding-bottom: 10px;
+  text-align: center;
+}
+
+#text{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: justify;
+  font-size: 1.5em;
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+#boxa {
+  margin-top: 3rem;
+  position: relative;
+  padding: 3rem 4rem 4rem;
+  border-radius: 30px;  
+  display: flex;
+  flex-direction: column;
+  /* font-size: 1em; */
+  text-align: justify;
+  background-color:#FEDAAE ;
+}
+
+#boxb {
+  margin-top: 3rem;
+  position: relative;
+  padding: 3rem 4rem 4rem;
+  border-radius: 30px;  
+  display: flex;
+  flex-direction: column;
+  /* font-size: 1em; */
+  text-align: justify;
+  background-color:#D1EFBD ;
+}
+
+#fact1 {
+  font-size: 3em;
+  color: #62929E;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+.iframe {
+  margin-top: 2rem;
+  margin-left: 9rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #know-more {
+    margin-top: 18rem;
+  }
+}
+
+/* quiz */
+
+#quiz {
+  margin-top: 3rem;
+  position: relative;
+  padding: 3rem 4rem 4rem;
+  border-radius: 30px;  
+  display: flex;
+  flex-direction: column;
+  /* font-size: 1em; */
+  text-align: justify;
+  background-color:#FEDAAE ;
 }
 #takequiz {
   color: #01295F;
@@ -92,3 +162,36 @@
   font-size: 2em;
   padding-bottom: 50px;
 }
+
+/* buttons */
+
+.button {
+  padding: 0.6rem 0.9rem !important;
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+  background-color:black !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.buttonn {
+  padding: 0.6rem 0.9rem !important;
+  position: absolute;
+  top: 1rem;
+  right: 8rem;
+  background-color:black !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+.btn1 {
+  padding: 0.6rem 0.9rem !important;
+  position: absolute;
+  top: 7.5rem;
+  right: 1.5rem;
+  background-color:black !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
