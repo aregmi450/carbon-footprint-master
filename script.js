@@ -1,7 +1,7 @@
 $(document).ready(function () {
   let nepali = {
-    nepali: 'नेपालीमा परिवर्तन गर्नुहोस्',
-    knowMore: 'बढी जान्नुहोस्',
+    nepali: 'अ्ग्रेजीमा परिवर्तन गर्नुहोस्',
+    knowMore: 'अझै धेरै जान्नुहोस्',
     homeEnergyLabel: 'गृह उर्जा',
     electricLabel: 'मासिक बिजुली बिल',
     currency1: 'रु',
@@ -14,6 +14,24 @@ $(document).ready(function () {
     travelLabel: 'यात्रा',
     carLabel: 'वार्षिक कार तपाईको कारमा चालित छ',
     distance1: 'कि.मि.',
+    helpBlock3:
+      'यदि लागू हुँदैन भने ० प्रविष्ट गर्नुहोस्। यदि खाली छोडियो भने ० मा पूर्वनिर्धारित हुनेछ।',
+    wheeler: 'वार्षिक दूरी तपाईंको दुई व्हीलरमा चालित',
+    distance2: 'कि.मि.',
+    helpBlock4:
+      'यदि लागू हुँदैन भने ० प्रविष्ट गर्नुहोस्। यदि खाली छोडियो भने ० मा पूर्वनिर्धारित हुनेछ।',
+    flightLabel: 'बितेको वर्षमा लिएको घण्टा संख्या',
+    hourLabel: 'घण्टा',
+    wasteLabel: 'फोहोर',
+    recycleLabel: 'के तपाई अखबार रिसायकल गर्नुहुन्छ?',
+    selection1: 'तपाईंले चयन गर्नु पर्छ।',
+    yesLabel1: 'हो',
+    noLabel1: 'होईन',
+    plasticLabel: 'के तपाईं प्लास्टिकलाई रिसायकल गर्नुहुन्छ?',
+    selection2: 'तपाईंले चयन गर्नु पर्छ।',
+    yesLabel2: 'हो',
+    noLabel2: 'होईन',
+    calculateBtn: 'हिसाब गर्नुहोस्',
   };
   // let ids = document.querySelectorAll('*[id]');
 
@@ -36,7 +54,7 @@ $(document).ready(function () {
     }
   });
 
-  $('#calculate-btn').on('click', function () {
+  $('#calculateBtn').on('click', function () {
     var calculateAndDisplayScore = function () {
       window.scrollTo(0, 400);
       // hide form template if all inputs are completed
@@ -133,7 +151,7 @@ $(document).ready(function () {
       $('#results').show();
 
       // refresh page when recalculate button clicked
-      $('#recalculate-btn').on('click', function () {
+      $('#recalculateBtn').on('click', function () {
         document.getElementById('electric').value = 0;
         document.getElementById('gas').value = 0;
         document.getElementById('car').value = 0;
