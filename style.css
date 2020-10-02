@@ -23,15 +23,14 @@
 }
 
 #announcement-panel {
-  background-image: linear-gradient(
-      to right,
-      rgba(38, 77, 0, 0.55),
-      rgba(38, 77, 0, 0.55)
-    ),
-    url('background.jpg');
-  background-position: center;
-  background-size: cover;
+  background-image: url('banner.jpg');
+  background-position: center center;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+
+#know-more {
+  margin-top: 25rem;
 }
 
 #home-energy-label,
@@ -122,4 +121,10 @@
 
 .iframe {
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #know-more {
+    margin-top: 18rem;
+  }
 }
