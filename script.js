@@ -3,11 +3,11 @@ $(document).ready(function () {
     JSON.parse(localStorage.getItem('lang')) === 'english'
       ? 'english'
       : 'nepali';
-  console.log(JSON.parse(localStorage.getItem('lang')) + 'local');
-  console.log(lang);
 
   let nepali = {
     langBtn: 'अ्ग्रेजीमा परिवर्तन गर्नुहोस्',
+    announcementHeader: 'तपाइँको कार्बन फुटप्रिन्ट जान्न चाहानुहुन्छ?',
+    announcementSubheader: 'अनुप्रयोगको साथ पत्ता लगाउनुहोस्',
     knowMore: 'अझै धेरै जान्नुहोस्',
     homeEnergyLabel: 'गृह उर्जा',
     electricLabel: 'मासिक बिजुली बिल',
@@ -52,9 +52,12 @@ $(document).ready(function () {
 
   let english = {
     langBtn: 'Change to Nepali',
+    announcementHeader: 'Want to know your Carbon Footprint?',
+    announcementSubheader: 'Find out with the app',
     knowMore: 'know more',
     homeEnergyLabel: 'Home Energy',
     electricLabel: 'Monthly electric bill',
+    gasLabel: 'Monthly Cooking Gas bill',
     currency1: 'Nrs',
     helpBlock1: 'Enter 0 if not applicable. If left blank, will default to 0.',
     currency2: 'Nrs',
@@ -112,7 +115,6 @@ $(document).ready(function () {
       lang = 'english';
       localStorage.setItem('lang', JSON.stringify(lang));
     }
-    console.log(lang);
   }
 
   // hide results template and error alerts on initial page load
