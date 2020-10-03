@@ -121,7 +121,7 @@
 
 #fact1 {
   font-size: 3em;
-  color: #62929E;
+  color: #BA2D0B;
   padding-top: 5px;
   padding-bottom: 10px;
   text-align: center;
@@ -152,20 +152,20 @@
   text-align: justify;
   background-color:#FEDAAE ;
 }
-#takequiz {
-  color: #01295F;
-  padding: none;
-  font-size: 2em;
-  padding-bottom: 50px;
-}
 
 #about-subheader {
   font-size: 2em;
-  color:green;
+  color:#62929E;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   text-align: center;
  
+}
+
+#quiztime {
+  position: relative;
+  top: 0.75rem;
+  left: 33.33rem;
 }
 
 /* buttons */
