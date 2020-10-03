@@ -1,6 +1,13 @@
 $(document).ready(function () {
+  let lang =
+    JSON.parse(localStorage.getItem('lang')) === 'english'
+      ? 'english'
+      : 'nepali';
+  console.log(JSON.parse(localStorage.getItem('lang')) + 'local');
+  console.log(lang);
+
   let nepali = {
-    nepali: 'अ्ग्रेजीमा परिवर्तन गर्नुहोस्',
+    langBtn: 'अ्ग्रेजीमा परिवर्तन गर्नुहोस्',
     knowMore: 'अझै धेरै जान्नुहोस्',
     homeEnergyLabel: 'गृह उर्जा',
     electricLabel: 'मासिक बिजुली बिल',
@@ -21,6 +28,8 @@ $(document).ready(function () {
     helpBlock4:
       'यदि लागू हुँदैन भने ० प्रविष्ट गर्नुहोस्। यदि खाली छोडियो भने ० मा पूर्वनिर्धारित हुनेछ।',
     flightLabel: 'बितेको वर्षमा लिएको घण्टा संख्या',
+    helpBlock5:
+      'यदि लागू हुँदैन भने ० प्रविष्ट गर्नुहोस्। यदि खाली छोडियो भने ० मा पूर्वनिर्धारित हुनेछ।',
     hourLabel: 'घण्टा',
     wasteLabel: 'फोहोर',
     recycleLabel: 'के तपाई अखबार रिसायकल गर्नुहुन्छ?',
@@ -32,14 +41,79 @@ $(document).ready(function () {
     yesLabel2: 'हो',
     noLabel2: 'होईन',
     calculateBtn: 'हिसाब गर्नुहोस्',
+    lead:
+      'यस संख्याले कार्बन डाइअक्साइडको इकाईहरूमा हरितगृह ग्याँसहरूको मात्रा प्रतिनिधित्व गर्दछ जुन तपाईं प्रति वर्ष उत्सर्जन गर्नुहुन्छ',
+    level1: 'छ हजार वा मुनि उत्कृष्ट छ',
+    level2: 'छ हजार देखि  १,५९९ राम्रो छ हजार छ',
+    level3: '१६,००० देखि २२,००० औसत हो',
+    level4: '२२,००० वा माथि खराब छ',
+    recalculateBtn: 'पुन: गणना',
+  };
+
+  let english = {
+    langBtn: 'Change to Nepali',
+    knowMore: 'know more',
+    homeEnergyLabel: 'Home Energy',
+    electricLabel: 'Monthly electric bill',
+    currency1: 'Nrs',
+    helpBlock1: 'Enter 0 if not applicable. If left blank, will default to 0.',
+    currency2: 'Nrs',
+    helpBlock2: 'Enter 0 if not applicable. If left blank, will default to 0.',
+    travelLabel: 'Travel',
+    carLabel: 'Annual distance driven on your car',
+    distance1: 'Km',
+    helpBlock3: 'Enter 0 if not applicable. If left blank, will default to 0.',
+    wheeler: 'Annual distance driven on your two wheeler',
+    distance2: 'Km',
+    helpBlock4: 'Enter 0 if not applicable. If left blank, will default to 0.',
+    flightLabel: 'Number of hours of flights taken in the past year.',
+    helpBlock5: 'Enter 0 if not applicable. If left blank, will default to 0.',
+    hourLabel: 'Hr',
+    wasteLabel: 'Waste',
+    recycleLabel: 'Do you recycle newspaper?',
+    selection1: 'You need to make a selection.',
+    yesLabel1: 'Yes',
+    noLabel1: 'No',
+    plasticLabel: 'Do you recycle plastics?',
+    selection2: 'You need to make a selection. ',
+    yesLabel2: 'Yes',
+    noLabel2: 'No',
+    calculateBtn: 'Calculate',
+    lead:
+      'This number represents the amount of greenhouse gases in units of carbon dioxide you emit per year',
+    level1: '6,000 or below is EXCELLENT ',
+    level2: '6,000 to 15,999 is GOOD',
+    level3: '16,000 to 22,000 is AVERAGE ',
+    level4: '22,000 or above is BAD ',
+    recalculateBtn: 'Recalculate',
   };
   // let ids = document.querySelectorAll('*[id]');
+  if (lang === 'english') {
+    lang = 'nepali';
+    changeLang();
+  } else {
+    lang = 'english';
+    changeLang();
+  }
 
-  document.getElementById('nepali').addEventListener('click', () => {
-    Object.keys(nepali).forEach(key => {
-      document.getElementById(`${key}`).textContent = nepali[key];
-    });
-  });
+  document.getElementById('langBtn').addEventListener('click', changeLang);
+
+  function changeLang() {
+    if (lang === 'english') {
+      Object.keys(nepali).forEach(key => {
+        document.getElementById(key).textContent = nepali[key];
+      });
+      lang = 'nepali';
+      localStorage.setItem('lang', JSON.stringify(lang));
+    } else {
+      Object.keys(english).forEach(key => {
+        document.getElementById(key).textContent = english[key];
+      });
+      lang = 'english';
+      localStorage.setItem('lang', JSON.stringify(lang));
+    }
+    console.log(lang);
+  }
 
   // hide results template and error alerts on initial page load
   $('#results').hide();

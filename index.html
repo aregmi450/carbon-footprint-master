@@ -25,7 +25,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <button class="btn btn-primary" id="nepali">Change to Nepali</button>
+      <button class="btn btn-primary" id="langBtn">Change to Nepali</button>
       <div class="row">
         <div
           class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"
@@ -145,7 +145,7 @@
                   />
                 </div>
 
-                <span class="help-block"
+                <span class="help-block" id="helpBlock5"
                   >Enter 0 if not applicable. If left blank, will default to
                   0.</span
                 >
@@ -162,8 +162,7 @@
                   role="alert"
                   id="newspaper-alert"
                 >
-                  <strong>Oops!</strong> <span id="selection1"></span> You need
-                  to make a selection.
+                  <span id="selection1"></span> You need to make a selection.
                 </div>
                 <div class="radio">
                   <label>
@@ -195,7 +194,6 @@
                   role="alert"
                   id="alum-tin-alert"
                 >
-                  <strong>Oops!</strong>
                   <span id="selection2">You need to make a selection.</span>
                 </div>
                 <div class="radio">
@@ -235,20 +233,28 @@
           <div id="results" class="text-center">
             <h1 id="score"></h1>
             <br />
-            <p class="lead">
+            <p class="lead" id="lead">
               This number represents the amount of greenhouse gases in units of
               carbon dioxide you emit per year
             </p>
             <br />
-            <h5 class="bg-success score-info">6,000 or below is EXCELLENT</h5>
-            <h5 class="bg-info score-info">6,000 to 15,999 is GOOD</h5>
-            <h5 class="bg-warning score-info">16,000 to 22,000 is AVERAGE</h5>
-            <h5 class="bg-danger score-info">22,000 or above is BAD</h5>
+            <h5 class="bg-success score-info" id="level1">
+              6,000 or below is EXCELLENT
+            </h5>
+            <h5 class="bg-info score-info" id="level2">
+              6,000 to 15,999 is GOOD
+            </h5>
+            <h5 class="bg-warning score-info" id="level3">
+              16,000 to 22,000 is AVERAGE
+            </h5>
+            <h5 class="bg-danger score-info" id="level4">
+              22,000 or above is BAD
+            </h5>
             <br />
             <br />
             <br />
             <button
-              id="recalculate-btn"
+              id="recalculateBtn"
               type="button"
               class="btn btn-success btn-lg btn-block"
             >
