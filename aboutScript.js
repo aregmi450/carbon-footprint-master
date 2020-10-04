@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', e => {
     paragraph2:
       "It works by summing up the emissions from all your activities -- everything from what you eat to what setting you wash your clothes with. It's all measured in CO2e, which stands for carbon dioxide equivalent and is a standard unit for measuring carbon footprints.It essentially takes any quantity or type of greenhouse gas and expresses it in the amount of CO2 that would have the equivalent global warming impact.It just allows us to easily compare impacts across different gases.",
     title3: 'C02 EMISSIONS IN NEPAL',
-    title4: 'SOURCES OF METHANE ',
+    title4: 'HISTORY OF CO2 EMISSIONS ',
   };
 
   if (lang === 'english') {
