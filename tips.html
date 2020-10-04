@@ -4,27 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carbon Reduction</title>
-    <link rel="stylesheet" href="css/main.css" />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Mukta&family=Noto+Sans+JP:wght@700&family=PT+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   </head>
-  <body>
-    <div class="container">
-      <a href="index.html" class="homeBtn"
-        ><img alt="logo" src="logo.png" width="120" height="50" id="logo"
-      /></a>
+  <body class="wrapper">
+    <!-- Header -->
+    <div class="row row--1">
+    
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="about-panel">
+        <a href="index.html">
+          <img alt="logo" src="logo.png" width="120" height="50" id="logo">
+        </a>
+        <a href="about.html" class="btn btn-primary buttonn" role="button"><svg xmlns="http://www.w3.org/2000/svg"
+            width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M19 12H6M12 5l-7 7 7 7" /></svg>
+          <path fill-rule="evenodd"
+            d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+          <path fill-rule="evenodd"
+            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+          </svg></a>
+        <a href="index.html" class="btn btn-primary button" role="button"><svg width="2em" height="2em" viewBox="0 0 16 16"
+            class="bi bi-house-fill" fill="#000" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+            <path fill-rule="evenodd"
+              d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+          </svg></a>
+        <a href="tips.html" class="btn btn-primary button3" role="button"><svg width="2em" height="2em" viewBox="0 0 16 16"
+            class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+          </svg></a>
+        <button class="btn btn-primary" id="langBtn">Change to Nepali</button>
+      </div>
+    </div>
+    <div class="tipContainer">
       <div class="header">
-        <h1>CARBON REDUCTION</h1>
-        <p>Tips and Advice to help you cut carbon and energy costs.</p>
+        <h1 id="title1">CARBON REDUCTION</h1>
+        <p id="paragraph1">Tips and Advice to help you cut carbon and energy costs.</p>
       </div>
       <details>
-        <summary>1. Hang out the washing instead of clothes drying.</summary>
+        <summary id="summary1">1. Hang out the washing instead of clothes drying.</summary>
         <div class="content">
-          <p>
+          <p id="paragraph2">
             Hanging the washing out instead of using the clothes drier will
-            <span style="font-weight: 700"
+            <span style="font-weight: 700" 
               >about 153kg CO<sub>2</sub> a year</span
             >
             - that's <span style="font-weight: 700">NPR 7,985 ($68)</span> each
@@ -34,9 +68,9 @@
       </details>
 
       <details>
-        <summary>2. Turn down the heating by 1⁰C.</summary>
+        <summary id="summary2">2. Turn down the heating by 1⁰C.</summary>
         <div class="content">
-          <p>
+          <p id="paragraph2">
             Reducing your heating by 1⁰C can
             <span style="font-weight: 700"
               >reduce your energy consumption by 8%.</span
@@ -52,11 +86,11 @@
       </details>
 
       <details>
-        <summary>
+        <summary id="summary3">
           3. Only fill the kettle with the amount of water you need to boil.
         </summary>
         <div class="content">
-          <p>
+          <p id="paragraph3">
             Only boiling the amount of water for your hot drink will save
             <span style="font-weight: 700">72kg CO<sub>2</sub></span> a year -
             that's
@@ -66,9 +100,9 @@
       </details>
 
       <details>
-        <summary>4. Spend less time in the shower</summary>
+        <summary id="summary4">4. Spend less time in the shower</summary>
         <div class="content">
-          <p>
+          <p id="paragraph4">
             Spending 1 minute less in the shower can save
             <span style="font-weight: 700"
               >23kg CO<sub>2</sub> and NPR 1175 ($10) a year </span
@@ -78,9 +112,9 @@
       </details>
 
       <details>
-        <summary>5. Turn electrical equipment off when not in use</summary>
+        <summary id="summary5">5. Turn electrical equipment off when not in use</summary>
         <div class="content">
-          <p>
+          <p id="paragraph5">
             Fully turning off just one LCD TV (rather than leaving it on
             standby) for 18 hours a day will save about
             <span style="font-weight: 700">5kg CO<sub>2</sub> a year </span>-
@@ -101,5 +135,6 @@
         >
       </p>
     </div>
+    <script src="tipScript.js"></script>
   </body>
 </html>
