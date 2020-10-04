@@ -136,6 +136,8 @@
   border-radius: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* font-size: 1em; */
   text-align: justify;
   background-color: #d1efbd;
@@ -399,12 +401,15 @@ summary::-webkit-details-marker {
   font-size: 22px;
 }
 
-details[open] summary ~ * {
+details {
+  margin: 0 2rem;
+}
+details[open] > summary ~ * {
   -webkit-animation: sweep 0.5s ease-out;
   animation: sweep 0.5s ease-out;
 }
 
-details[open] summary::-webkit-details-marker {
+details[open] > summary::-webkit-details-marker {
   background: url('up.png') center no-repeat;
   color: transparent;
 }
