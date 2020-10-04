@@ -19,6 +19,10 @@ $(document).ready(function () {
     currency2: 'रु',
     helpBlock2:
       'यदि लागू हुँदैन भने ० प्रविष्ट गर्नुहोस्। यदि खाली छोडियो भने ० मा पूर्वनिर्धारित हुनेछ।',
+    householdLabel: 'घरपरिवारको संख्या',
+    number: 'न.',
+    helpBlock6:
+      'यदि लागू हुँदैन भने ० प्रविष्ट गर्नुहोस्। यदि खाली छोडियो भने ० मा पूर्वनिर्धारित हुनेछ।',
     travelLabel: 'यात्रा',
     carLabel: 'वार्षिक कार तपाईको कारमा चालित छ',
     distance1: 'कि.मि.',
@@ -64,6 +68,9 @@ $(document).ready(function () {
     helpBlock1: 'Enter 0 if not applicable. If left blank, will default to 0.',
     currency2: 'Nrs',
     helpBlock2: 'Enter 0 if not applicable. If left blank, will default to 0.',
+    householdLabel: 'Number of people in household',
+    number: 'No.',
+    helpBlock6: 'Enter 0 if not applicable. If left blank, will default to 0.',
     travelLabel: 'Travel',
     carLabel: 'Annual distance driven on your car',
     distance1: 'Km',
@@ -141,6 +148,7 @@ $(document).ready(function () {
       // get input values
       var electricInput = document.getElementById('electric').value;
       var gasInput = document.getElementById('gas').value;
+      var household = document.getElementById('household').value;
       var carInput = document.getElementById('car').value;
       var oilInput = document.getElementById('two-wheeler').value;
       var flightsInput = document.getElementById('flights-4-more').value;
@@ -150,6 +158,7 @@ $(document).ready(function () {
       // set variables for calculating each component score
       var electricScore = '';
       var gasScore = '';
+      var householdScore = household ? household : 0;
       var carScore = '';
       var flights4MoreScore = '';
       var newspaperScore = '';
@@ -214,7 +223,7 @@ $(document).ready(function () {
       // console.log("Flights taken 4 hours or more score is: " + flights4MoreScore);
 
       // calculate scores for each category
-      var energyScore = electricScore + gasScore + oilScore;
+      var energyScore = (electricScore + gasScore + oilScore) * householdScore;
       var travelScore = carScore + flights4LessScore + flights4MoreScore;
       var wasteScore = newspaperScore + alumTinScore;
 
@@ -230,8 +239,10 @@ $(document).ready(function () {
 
       // refresh page when recalculate button clicked
       $('#recalculateBtn').on('click', function () {
+        console.log(household);
         document.getElementById('electric').value = 0;
         document.getElementById('gas').value = 0;
+        document.getElementById('household').value = 0;
         document.getElementById('car').value = 0;
         document.getElementById('two-wheeler').value = 0;
         document.getElementById('flights-4-more').value = 0;
