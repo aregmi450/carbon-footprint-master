@@ -54,7 +54,7 @@ $(document).ready(function () {
     langBtn: 'Change to Nepali',
     announcementHeader: 'Want to know your Carbon Footprint?',
     announcementSubheader: 'Find out with the app',
-    knowMore: 'know more',
+    knowMore: 'Learn more',
     homeEnergyLabel: 'Home Energy',
     electricLabel: 'Monthly electric bill',
     gasLabel: 'Monthly Cooking Gas bill',
