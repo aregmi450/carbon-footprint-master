@@ -87,6 +87,11 @@
   height: 100%;
   font-family: 'Inconsolata', sans-serif;
 }
+
+#email {
+  margin-left: 0.5rem;
+}
+
 #title2,
 #title4,
 #fact {
