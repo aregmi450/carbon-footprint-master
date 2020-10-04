@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', e => {
     paragraph3:
       'यो तपाइँको सबै गतिविधिहरु बाट उत्सर्जन सार संग काम गर्दछ - तपाइँ के खान देखि सबै तपाइँ तपाइँको लुगा धुने के के सबै केहि। यो सबै CO2e मा मापन गरिएको छ, जो कार्बन डाइअक्साइड बराबर हो र कार्बन पदचिह्न मापन को लागी एक मानक इकाई हो। यसले अनिवार्य रूपमा कुनै पनि मात्रा वा हरितगृह ग्यासको प्रकार लिन्छ र यसलाई CO2 को मात्रामा अभिव्यक्त गर्दछ कि बराबर ग्लोबल वार्मिंग प्रभाव हुनेछ। यसले हामीलाई सजिलैसँग विभिन्न ग्याँसहरूमा प्रभावहरू तुलना गर्न अनुमति दिन्छ।',
     title3: 'नेपालमा C02 उत्सर्जन',
-    title4: 'C02 उत्सर्जनको इतिहास',
+    title4: 'GMAO बाट कार्बन डाइअक्साइड एसिमेलिटेड OCO-2 डाटा प्रयोग गरेर',
   };
 
   let english = {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', e => {
     paragraph2:
       "It works by summing up the emissions from all your activities -- everything from what you eat to what setting you wash your clothes with. It's all measured in CO2e, which stands for carbon dioxide equivalent and is a standard unit for measuring carbon footprints.It essentially takes any quantity or type of greenhouse gas and expresses it in the amount of CO2 that would have the equivalent global warming impact.It just allows us to easily compare impacts across different gases.",
     title3: 'C02 EMISSIONS IN NEPAL',
-    title4: 'HISTORY OF CO2 EMISSIONS ',
+    title4: 'Carbon Dioxide from GMAO using Assimilated OCO-2 Data',
   };
 
   if (lang === 'english') {

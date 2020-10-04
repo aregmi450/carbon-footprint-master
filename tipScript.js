@@ -9,46 +9,35 @@ document.addEventListener('DOMContentLoaded', e => {
     title1: 'कार्बन कटौती',
     paragraph1:
       'सुझाव र सल्लाह तपाईंलाई कार्बन र ऊर्जा लागत कटौती गर्न मद्दतको लागि।',
-    summary1: '१. लुगा सुक्नुको सट्टा धुनुहोस्।',
+    summary1:
+      '१. धोएको कपडा ड्राई क्लिन गर्नु को बिकल्पमा झुण्ड्याएर सुकाउनु होस् । ',
     paragraph2: `लुगा धुक्ने प्रयोगको सट्टा धुनु पर्दा
             <span शैली = "फन्ट-वजन: "००"
-              > १ 153kg CO <sub> २ </sub> एक बर्ष </ span
+              > १५३kg CO <sub> २ </sub> एक बर्ष </ span
             >
-            - त्यो <span शैली = "फन्ट-वजन: "००"> एनपीआर,, 85 (85 ($ $)) </span> प्रत्येक
-            वर्ष, १ 150० चक्रको आधारमा एक बर्ष।`,
-    summary2: '२. हीटिंगलाई १⁰C सेन्टिमेन्ट गर्नुहोस्।',
-    paragraph3: `तपाइँको तताउने १⁰C क्यान द्वारा कम गर्दै
-            <span शैली = "फन्ट-वजन: "००"
-              > तपाईंको ऊर्जा खपत%% कम गर्नुहोस्। </ span
-            >
-            औसत घरेलू ग्यास बिलको लागि १२,500००kWh को हुनेछ
-            <span शैली = "फन्ट-वजन: "००"
-              > तपाईंको CO <sub> २ </sub> उत्सर्जन १44 किलो - </ span द्वारा कम गर्नुहोस्
-            >
-            त्यो हो
-            <span शैली = "फन्ट-वजन: "००"> एनपीआर 60 6460० ($$) प्रत्येक वर्ष। </ span>`,
-    summary3: '३. केवल उमाल्ने पानीको मात्राको मात्र केतल भर्नुहोस्।',
-    paragraph4: `तपाईको तातो पेयको लागि पानीको मात्रा मात्र उमाले बचत हुनेछ
-            <span शैली = "फन्ट-वजन: "००"> k२ किलो CO <sub> २ </sub> </span> एक बर्ष -
-            त्यो हो
-            <span शैली = "फन्ट-वजन: "००"> एनपीआर 25 35२25 ($ )०) प्रतिवर्ष </ span>।`,
-    summary4: '४. शावरमा कम समय खर्च गर्नुहोस्',
-    paragraph5: `नुहाउने मा १ मिनेट कम खर्च बचत गर्न सक्दछ
-            <span शैली = "फन्ट-वजन: "००"
-              > २k किलोग्राम CO <sub> २ </sub> र NPR ११75 (($ १०) एक वर्ष </ span
-            > (एक स्नान एक दिन र एक 9kW स्नान मा आधारित) .5। बिजुली उपकरण बन्द गर्नुहोस् जब प्रयोगमा छैन`,
+            - त्यो <span शैली = "फन्ट-वजन: "००"> एनपीआर, 85($68) </span> प्रत्येक
+            वर्ष, 150 चक्रको आधारमा एक बर्ष।`,
+    summary2: '२. तताउने कार्य 1 ले घटाउनु होस्।',
+    paragraph3: `तपाईंले आफ्नो हिटिङ्ग 1°c ले घटाए विधुत खपत 8% ले घट्छ । सरदर 12,500 kwh ग्यास बिल ले  कार्बन उत्सर्जन 184 केजीले घटाउँछ, जुन नेरू 6460 प्रति बर्ष बचत हो।`,
+    paragraph4:
+      'चाहे जति मात्र पानी तताउदा 72 केजी कार्बन बचत हुन्छ- जुन नेरू 3525 ($30) प्रति बर्ष',
+    summary3: '३.  कित्लीमा पानी तताउन चाहे जति मात्र  भर्नु होस् ।',
+    paragraph4: `
+चाहे जति मात्र पानी तताउदा 72 केजी कार्बन बचत हुन्छ- जुन नेरू 3525 ($30) प्रति बर्ष`,
+    summary4: '४. नुहाउन जाँदा कम समय बिताउनु होस्',
+    paragraph5: `स्नानमा १ मिनेट कम खर्च गरेमा वर्षको २k किलोग्राम सीओ २ र एनपीआर रु ११७५ ($१०) बचत गर्न सक्दछ (दिनको एक स्नान र 9 केडब्लु नुहाउनेमा आधारित)।`,
     summary5: '५. विद्युतीय उपकरणहरू बन्द गर्नुहोस् जब प्रयोगमा छैन',
     paragraph6: `
 
 पूर्ण रूपमा केवल एक LCD टिभी बन्द गर्दै (यसमा छोड्नु भन्दा पनि
-            अतिरिक्त) १ 18 घण्टा को लागी एक दिन को बारे मा बचत हुनेछ
+            अतिरिक्त) १8 घण्टा को लागी एक दिन को बारे मा बचत हुनेछ
             <span शैली = "फन्ट-वजन: "००"> k किलो सीओ <sub> २ </sub> एक वर्ष </ span> -
-            बचत <स्प्यान शैली = "फन्ट-वजन: "००"> एनपीआर 10 १०० एक वर्ष ($ २.6464) </span>।
+            बचत <span शैली = "फन्ट-वजन: "००"> एनपीआर 10 १०० एक वर्ष ($ २.6464) </span>।
             सबै अन्य बिजुली उपकरणहरू बन्द गर्नुहोस् जब गुणा गर्न प्रयोगमा छैन
             बचत।`,
     last: `कुल सम्भावित बचतहरू छन्
         <span शैली = "फन्ट-वजन:" ०० "
-          > 7 437kg CO <sub> २ </sub> र NPR १,,470० ($ १ )०) </ span
+          > 7 437kg CO <sub> २ </sub> र NPR १,470० ($ १०) </ span
         >
         प्रत्येक वर्ष।
         <span शैली = "फन्ट-वजन:" ०० "
@@ -67,7 +56,7 @@ document.addEventListener('DOMContentLoaded', e => {
             - that's <span style="font-weight: 700">NPR 7,985 ($68)</span> each
             year, based on 150 cycles a year.`,
     summary2: '2. Turn down the heating by 1⁰C.',
-    paragraph2: `Reducing your heating by 1⁰C can
+    paragraph3: `Reducing your heating by 1⁰C can
             <span style="font-weight: 700"
               >reduce your energy consumption by 8%.</span
             >
@@ -79,17 +68,17 @@ document.addEventListener('DOMContentLoaded', e => {
             <span style="font-weight: 700">NPR 6460 ($55) each year.</span>`,
     summary3:
       '3. Only fill the kettle with the amount of water you need to boil.',
-    paragraph3: `Only boiling the amount of water for your hot drink will save
+    paragraph4: `Only boiling the amount of water for your hot drink will save
             <span style="font-weight: 700">72kg CO<sub>2</sub></span> a year -
             that's
             <span style="font-weight: 700">NPR 3525 ($30) per annum</span>.`,
     summary4: '4. Spend less time in the shower',
-    paragraph4: ` Spending 1 minute less in the shower can save
+    paragraph5: ` Spending 1 minute less in the shower can save
             <span style="font-weight: 700"
               >23kg CO<sub>2</sub> and NPR 1175 ($10) a year </span
             >(based on one shower a day and a 9kW shower).`,
     summary5: `5. Turn electrical equipment off when not in use`,
-    paragraph5: `Fully turning off just one LCD TV (rather than leaving it on
+    paragraph6: `Fully turning off just one LCD TV (rather than leaving it on
             standby) for 18 hours a day will save about
             <span style="font-weight: 700">5kg CO<sub>2</sub> a year </span>-
             saving<span style="font-weight: 700">NPR 310 a year ($2.64)</span>.
